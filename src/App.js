@@ -1,5 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
+import icon1 from "./images/icon1.svg";
+import icon2 from "./images/icon2.svg";
+import icon3 from "./images/icon3.svg";
+import icon5 from "./images/icon5.svg";
+import icon6 from "./images/icon6.svg";
+import icon7 from "./images/icon7.svg";
+import logo from "./images/LOGO.png";
+import war1 from "./images/warrior1.svg";
+import war2 from "./images/warrior2.svg";
+import war3 from "./images/warrior3.svg";
+import war4 from "./images/warrior4.svg";
+import fighting from "./images/fighticon.svg";
 
 function App() {
   return (
@@ -12,22 +23,22 @@ function App() {
           <div className="col-2 logo-section">
             <div className="logo">
               <a href="#">
-                <img src="https://game.metaceek.io/images/LOGO.png" alt="" />
+                <img src={logo} alt="" />
               </a>
             </div>
           </div>
           <div className="col-lg-10 col-12">
             <div className="menu">
               <div className="item">
-                <img src="https://game.metaceek.io/images/icon7.svg" alt="" />
+                <img src={icon7} alt="" />
                 <p className="title mb-0">META CEEK</p>
               </div>
               <div className="item">
-                <img src="https://game.metaceek.io/images/icon6.svg" alt="" />
+                <img src={icon6} alt="" />
                 <p className="title mb-0">MY HEROES</p>
               </div>
               <div className="item">
-                <img src="https://game.metaceek.io/images/icon5.svg" alt="" />
+                <img src={icon5} alt="" />
                 <p className="title mb-0">MARKET</p>
               </div>
               {/* <div class="item">
@@ -35,55 +46,31 @@ function App() {
                         <p class="title mb-0">UPGRADE</p>
                     </div> */}
               <div className="item">
-                <img src="https://game.metaceek.io/images/icon3.svg" alt="" />
+                <img src={icon3} alt="" />
                 <p className="title mb-0">RECRUIT</p>
               </div>
               <div className="item">
-                <img src="https://game.metaceek.io/images/icon2.svg" alt="" />
+                <img src={icon2} alt="" />
                 <p className="title mb-0">BATTLE LOG</p>
               </div>
               <div className="item">
-                <img src="https://game.metaceek.io/images/icon1.svg" alt="" />
+                <img src={icon1} alt="" />
                 <p className="title mb-0">GITBOOK</p>
               </div>
             </div>
           </div>
         </div>
         <div className="heroes">
-          <img
-            className="logo_mobile"
-            src="https://game.metaceek.io/images/LOGO.png"
-            alt=""
-          />
+          <img className="logo_mobile" src={logo} alt="" />
           <p className="title mobile">FIGHT</p>
-          <img
-            className="hero_1"
-            src="https://game.metaceek.io/images/warrior2.svg"
-            alt=""
-          />
-          <img
-            className="hero_2"
-            src="https://game.metaceek.io/images/warrior4.svg"
-            alt=""
-          />
-          <img
-            className="hero_3"
-            src="https://game.metaceek.io/images/warrior1.svg"
-            alt=""
-          />
-          <img
-            className="hero_4"
-            src="https://game.metaceek.io/images/warrior3.svg"
-            alt=""
-          />
+          <img className="hero_1" src={war2} alt="" />
+          <img className="hero_2" src={war4} alt="" />
+          <img className="hero_3" src={war1} alt="" />
+          <img className="hero_4" src={war3} alt="" />
         </div>
       </div>
       <div className="fight text-center">
-        <img
-          className="hero_fight"
-          src="https://game.metaceek.io/images/fighticon.svg"
-          alt=""
-        />
+        <img className="hero_fight" src={fighting} alt="" />
         <p className="title m-auto" style={{ width: "90%" }}>
           FIGHT
         </p>

@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("https://game.metaceek.io/images/background.jpg");
+  background-image: url("/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
