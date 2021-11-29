@@ -78,7 +78,7 @@ function App() {
 
   useEffect(() => {
     //processing
-    connectWallet();
+    // connectWallet();
 
     //address here
     console.log(wallet);
@@ -131,6 +131,17 @@ function App() {
                 <img src={icon1} alt="" />
                 <p className="title mb-0">GITBOOK</p>
               </div>
+              <div
+                className="item"
+                onClick={() => {
+                  connectWallet();
+                }}
+              >
+                <img src={icon5} alt="" />
+                <p className="title mb-0">
+                  {wallet ? formatWalletAddress(wallet) : "CONNECT"}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -143,7 +154,7 @@ function App() {
                 connectWallet();
               }}
             >
-              CONNECT
+              {wallet ? formatWalletAddress(wallet) : "CONNECT"}
             </p>
             <p className="title mobile">FIGHT</p>
           </div>
