@@ -137,7 +137,14 @@ function App() {
         <div className="heroes">
           <img className="logo_mobile" src={logo} alt="" />
           <div className="button-box mobile">
-            <p className="title mobile ketnoi mr-2">CONNECT</p>
+            <p
+              className="title mobile ketnoi mr-2"
+              onClick={() => {
+                connectWallet();
+              }}
+            >
+              CONNECT
+            </p>
             <p className="title mobile">FIGHT</p>
           </div>
           <img className="hero_1" src={war2} alt="" />
