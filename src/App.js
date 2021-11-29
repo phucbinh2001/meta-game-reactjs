@@ -11,8 +11,82 @@ import war2 from "./images/warrior2.svg";
 import war3 from "./images/warrior3.svg";
 import war4 from "./images/warrior4.svg";
 import fighting from "./images/fighticon.svg";
+import { useEffect, useState } from "react";
+import WalletConnectProvider from "@walletconnect/web3-provider";
 
 function App() {
+  const [wallet, setWallet] = useState("");
+
+  const formatWalletAddress = (address) => {
+    if (address) {
+      let newAddress =
+        address.slice(0, 2) +
+        "..." +
+        address.slice(address.length - 3, address.length);
+      return newAddress;
+    } else {
+      return "";
+    }
+  };
+
+  const connectWallet = async () => {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      // true for mobile device
+      const provider = await new WalletConnectProvider({
+        rpc: {
+          56: "https://bsc-dataseed1.binance.org",
+        },
+        chainId: 56,
+        network: "binance",
+        qrcode: true,
+      });
+      provider.networkId = 56;
+      await provider.enable().catch((err) => {
+        //handle close modal
+      });
+    } else {
+      // false for not mobile device
+      if (typeof window.ethereum !== "undefined") {
+        //Metamask wallet
+
+        window.ethereum
+          .request({ method: "eth_requestAccounts" })
+          .then((accounts) => {
+            const account = accounts[0];
+            setWallet(account);
+          });
+
+        //Binance chain wallet
+
+        // window.BinanceChain
+        //   .request({method: "eth_accounts"})
+        //   .then((accounts) => {
+        //     const account = accounts[0];
+        //     setWallet(account);
+        //   })
+      } else {
+        window.open(
+          "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn"
+        );
+      }
+    }
+  };
+
+  useEffect(() => {
+    //processing
+    connectWallet();
+
+    //address here
+    console.log(wallet);
+
+    //out
+    return 0;
+  }, [wallet]);
+
   return (
     <div>
       <div
@@ -62,7 +136,10 @@ function App() {
         </div>
         <div className="heroes">
           <img className="logo_mobile" src={logo} alt="" />
-          <p className="title mobile">FIGHT</p>
+          <div className="button-box mobile">
+            <p className="title mobile ketnoi mr-2">CONNECT</p>
+            <p className="title mobile">FIGHT</p>
+          </div>
           <img className="hero_1" src={war2} alt="" />
           <img className="hero_2" src={war4} alt="" />
           <img className="hero_3" src={war1} alt="" />

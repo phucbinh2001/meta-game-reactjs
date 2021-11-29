@@ -221,11 +221,19 @@ img.hero_4 {
     display: none;
   }
 
-  .title.mobile {
+  .mobile {
+    display: block;
+  }
+
+  .ketnoi {
+    margin-right: 10px;
+  }
+
+  .button-box.mobile {
     position: absolute;
+    width: max-content;
+    display: flex;
     top: 20px;
     right: 10px;
-    padding: 5px 40px;
-    display: block;
   }
 }
