@@ -3,6 +3,7 @@ import icon1 from "./images/icon1.svg";
 import icon2 from "./images/icon2.svg";
 import icon3 from "./images/icon3.svg";
 import icon5 from "./images/icon5.svg";
+import connect from "./images/connect.svg";
 import icon6 from "./images/icon6.svg";
 import icon7 from "./images/icon7.svg";
 import logo from "./images/LOGO.png";
@@ -137,7 +138,7 @@ function App() {
                   connectWallet();
                 }}
               >
-                <img src={icon5} alt="" />
+                <img src={connect} alt="" />
                 <p className="title mb-0">
                   {wallet ? formatWalletAddress(wallet) : "CONNECT"}
                 </p>
