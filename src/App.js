@@ -14,6 +14,7 @@ import war4 from "./images/warrior4.svg";
 import fighting from "./images/fighticon.svg";
 import { useEffect, useState } from "react";
 import WalletConnectProvider from "@walletconnect/web3-provider";
+import Web3 from "web3";
 
 function App() {
   const [wallet, setWallet] = useState("");
@@ -49,6 +50,9 @@ function App() {
       await provider.enable().catch((err) => {
         //handle close modal
       });
+      const web3 = new Web3(provider);
+      const accounts = await web3.eth.getAccounts();
+      setWallet(accounts[0]);
     } else {
       // false for not mobile device
       if (typeof window.ethereum !== "undefined") {
