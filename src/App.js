@@ -278,7 +278,7 @@ function App() {
                 automatically.
               </p>
               <p>Metaceek is launched on Pancakeswap.</p>
-              <p className="text-center">Buy & Sale Slippage: 12%</p>
+              <h4 className="text-center">Buy & Sale Slippage: 12%</h4>
             </div>
             {/* <div className="modal-footer">
               <button
