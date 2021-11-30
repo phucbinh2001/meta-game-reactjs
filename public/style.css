@@ -19,8 +19,7 @@ body {
 }
 
 .modal-content {
-  background-color: #0000;
-  backdrop-filter: blur(20px);
+  background-color: #112234;
   color: #38ffff;
 }
 
@@ -199,9 +198,8 @@ img.hero_4 {
     position: relative;
     justify-content: flex-start;
     overflow-x: scroll;
-    background: rgb(0 108 255 / 7%);
+    background: #112234;
     z-index: 11111;
-    backdrop-filter: blur(20px);
   }
 
   .title {
@@ -261,6 +259,11 @@ img.hero_4 {
   }
 
   #TOKENOMICS {
+    padding: 10px !important;
     padding-bottom: 150px !important;
+  }
+
+  .contact {
+    font-size: 14px;
   }
 }

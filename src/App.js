@@ -190,58 +190,61 @@ function App() {
               style={{ flexDirection: "column" }}
             >
               <div className="row w-100">
-                <div className="col-lg-5 col-4">Emergency Funds</div>
-                <div className="col-lg-2 col-4">1.5%</div>
-                <div className="col-lg-5 col-4">1.500.000 MetaCeek</div>
+                <div className="col-lg-5 col-4">List on Pancake Swap</div>
+                <div className="col-lg-2 col-4">30.0%</div>
+                <div className="col-lg-5 col-4">3.000.000.000 MetaCeek</div>
               </div>
               <div className="row w-100">
-                <div className="col-lg-5 col-4">CEX Exchanges</div>
+                <div className="col-lg-5 col-4">Pre-sale WhiteList</div>
+                <div className="col-lg-2 col-4">25.0%</div>
+                <div className="col-lg-5 col-4">2.500.000.000 MetaCeek</div>
+              </div>
+              {/* <div className="row w-100">
+                <div className="col-lg-5 col-4">Pre-sale</div>
+                <div className="col-lg-2 col-4">18.0%</div>
+                <div className="col-lg-5 col-4">1.500.000.000 MetaCeek</div>
+              </div> */}
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Aridrop</div>
+                <div className="col-lg-2 col-4">2.0%</div>
+                <div className="col-lg-5 col-4">200.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Burn</div>
+                <div className="col-lg-2 col-4">13.0%</div>
+                <div className="col-lg-5 col-4">1.300.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Cex listings</div>
                 <div className="col-lg-2 col-4">20.0%</div>
-                <div className="col-lg-5 col-4">20.000.000 MetaCeek</div>
+                <div className="col-lg-5 col-4">2.000.000.000 MetaCeek</div>
               </div>
               <div className="row w-100">
-                <div className="col-lg-5 col-4">Private Presale</div>
-                <div className="col-lg-2 col-4">4.0%</div>
-                <div className="col-lg-5 col-4">4.000.000 MetaCeek</div>
-              </div>
-              <div className="row w-100">
-                <div className="col-lg-5 col-4">Public Presale</div>
-                <div className="col-lg-2 col-4">35.0%</div>
-                <div className="col-lg-5 col-4">35.000.000 MetaCeek</div>
-              </div>
-              <div className="row w-100">
-                <div className="col-lg-5 col-4">Liquidity Pool</div>
-                <div className="col-lg-2 col-4">24.5%</div>
-                <div className="col-lg-5 col-4">24.500.000 MetaCeek</div>
-              </div>
-              <div className="row w-100">
-                <div className="col-lg-5 col-4">BNBH Ecosystem Dev Wallet</div>
-                <div className="col-lg-2 col-4">9.0%</div>
-                <div className="col-lg-5 col-4">9.000.000 MetaCeek</div>
-              </div>
-              <div className="row w-100">
-                <div className="col-lg-5 col-4">Marketing Wallet</div>
+                <div className="col-lg-5 col-4">Development Team</div>
                 <div className="col-lg-2 col-4">5.0%</div>
-                <div className="col-lg-5 col-4">5.000.000 MetaCeek</div>
+                <div className="col-lg-5 col-4">500.000.000 MetaCeek</div>
               </div>
               <div className="row w-100">
-                <div className="col-lg-5 col-4"> Advisors and Partnerships</div>
-                <div className="col-lg-2 col-4">1.0%</div>
-                <div className="col-lg-5 col-4">1.000.000 MetaCeek</div>
+                <div className="col-lg-5 col-4">Marketing</div>
+                <div className="col-lg-2 col-4">5.0%</div>
+                <div className="col-lg-5 col-4">500.000.000 MetaCeek</div>
               </div>
               <div className="row w-100">
                 <div className="col-lg-5 col-4">Total </div>
                 <div className="col-lg-2 col-4">100.0%</div>
-                <div className="col-lg-5 col-4">10.000.000 MetaCeek</div>
+                <div className="col-lg-5 col-4">10.000.000.000 MetaCeek</div>
               </div>
             </div>
-            <div className="col-lg-6 col-12 chart">
+            <div className="col-lg-6 col-12 chart mt-5 mb-5">
               <img width="100%" src={chart} alt="" />
             </div>
           </div>
-          <h3 className="text-center" style={{ color: "rgb(56, 255, 255)" }}>
-            BUY AND SELL 10% SLIPPAGE
-          </h3>
+          <h5
+            className="text-center mt-4"
+            style={{ color: "rgb(56, 255, 255)" }}
+          >
+            BUY AND SELL 12% SLIPPAGE
+          </h5>
         </div>
       </section>
       {/* Modal */}
@@ -271,7 +274,7 @@ function App() {
                 Binance Smart Chain which rewards players directly in Bnb or
                 ceek Players will use Metaceek to recruit heroes, Level up,
                 upgrade buildings, purchase various items and complete missions
-                in order to receive rewards in BNB or CEKK.
+                in order to receive rewards in BNB or CEEK.
               </p>
               <p>
                 Besides, just holding metaceek you will get paid ceek
@@ -279,6 +282,20 @@ function App() {
               </p>
               <p>Metaceek is launched on Pancakeswap.</p>
               <h4 className="text-center">Buy & Sale Slippage: 12%</h4>
+              <div
+                className="text-center"
+                style={{ color: "rgb(56, 255, 255)" }}
+              >
+                <h5>4% automatic reward ceek Token </h5>
+                <h5>6% goes back to reward bnb poll</h5>
+                <h5>2% liquidity poll</h5>
+                <h5>
+                  Contract ceek Token: <br />{" "}
+                  <span className="contact">
+                    0xe0f94ac5462997d2bc57287ac3a3ae4c31345d66
+                  </span>
+                </h5>
+              </div>
             </div>
             {/* <div className="modal-footer">
               <button
