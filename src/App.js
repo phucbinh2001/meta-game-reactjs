@@ -9,7 +9,7 @@ import icon7 from "./images/icon7.svg";
 import logo from "./images/LOGO.png";
 import war1 from "./images/warrior1.svg";
 import war2 from "./images/warrior2.svg";
-import chart from "./images/chart.svg";
+import chart from "./images/Tokenomic.png";
 import war3 from "./images/warrior3.svg";
 import war4 from "./images/warrior4.svg";
 import fighting from "./images/fighticon.svg";
