@@ -196,9 +196,12 @@ img.hero_4 {
   .menu {
     padding-left: 0;
     width: 100vw;
+    position: relative;
     justify-content: flex-start;
     overflow-x: scroll;
     background: rgb(0 108 255 / 7%);
+    z-index: 11111;
+    backdrop-filter: blur(20px);
   }
 
   .title {
@@ -255,5 +258,9 @@ img.hero_4 {
     display: flex;
     top: 20px;
     right: 10px;
+  }
+
+  #TOKENOMICS {
+    padding-bottom: 150px !important;
   }
 }

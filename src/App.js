@@ -117,6 +117,14 @@ function App() {
                 <img src={icon6} alt="" />
                 <p className="title mb-0">MY HEROES</p>
               </div>
+              <div
+                className="item"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <img src={icon1} alt="" />
+                <p className="title mb-0">GITBOOK</p>
+              </div>
               <div className="item">
                 <img src={icon5} alt="" />
                 <p className="title mb-0">MARKET</p>
@@ -132,14 +140,6 @@ function App() {
               <div className="item">
                 <img src={icon2} alt="" />
                 <p className="title mb-0">BATTLE LOG</p>
-              </div>
-              <div
-                className="item"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <img src={icon1} alt="" />
-                <p className="title mb-0">GITBOOK</p>
               </div>
               <div
                 className="item"
