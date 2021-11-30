@@ -18,6 +18,26 @@ body {
   width: fit-content;
 }
 
+.modal-content {
+  background-color: #0000;
+  backdrop-filter: blur(20px);
+  color: #38ffff;
+}
+
+.modal-header {
+  border-color: #38ffff;
+}
+
+.table-custom > .row {
+  border-top: 1px solid #38ffff;
+  border-bottom: 1px solid #38ffff;
+}
+
+.table-custom {
+  color: #38ffff;
+  font-weight: 700;
+}
+
 .menu {
   padding-left: 50px;
   display: flex;

@@ -9,6 +9,7 @@ import icon7 from "./images/icon7.svg";
 import logo from "./images/LOGO.png";
 import war1 from "./images/warrior1.svg";
 import war2 from "./images/warrior2.svg";
+import chart from "./images/chart.svg";
 import war3 from "./images/warrior3.svg";
 import war4 from "./images/warrior4.svg";
 import fighting from "./images/fighticon.svg";
@@ -132,7 +133,11 @@ function App() {
                 <img src={icon2} alt="" />
                 <p className="title mb-0">BATTLE LOG</p>
               </div>
-              <div className="item">
+              <div
+                className="item"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 <img src={icon1} alt="" />
                 <p className="title mb-0">GITBOOK</p>
               </div>
@@ -174,6 +179,120 @@ function App() {
         <p className="title m-auto" style={{ width: "90%" }}>
           FIGHT
         </p>
+      </div>
+
+      <section className="p-5" id="TOKENOMICS">
+        <div className="container">
+          <h2 className="title mb-5 title-custom">TOKENOMICS</h2>
+          <div className="row">
+            <div
+              className="col-lg-6 col-12 d-flex align-items-center justify-content-center table-custom"
+              style={{ flexDirection: "column" }}
+            >
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Emergency Funds</div>
+                <div className="col-lg-2 col-4">1.5%</div>
+                <div className="col-lg-5 col-4">1.500.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">CEX Exchanges</div>
+                <div className="col-lg-2 col-4">20.0%</div>
+                <div className="col-lg-5 col-4">20.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Private Presale</div>
+                <div className="col-lg-2 col-4">4.0%</div>
+                <div className="col-lg-5 col-4">4.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Public Presale</div>
+                <div className="col-lg-2 col-4">35.0%</div>
+                <div className="col-lg-5 col-4">35.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Liquidity Pool</div>
+                <div className="col-lg-2 col-4">24.5%</div>
+                <div className="col-lg-5 col-4">24.500.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">BNBH Ecosystem Dev Wallet</div>
+                <div className="col-lg-2 col-4">9.0%</div>
+                <div className="col-lg-5 col-4">9.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Marketing Wallet</div>
+                <div className="col-lg-2 col-4">5.0%</div>
+                <div className="col-lg-5 col-4">5.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4"> Advisors and Partnerships</div>
+                <div className="col-lg-2 col-4">1.0%</div>
+                <div className="col-lg-5 col-4">1.000.000 MetaCeek</div>
+              </div>
+              <div className="row w-100">
+                <div className="col-lg-5 col-4">Total </div>
+                <div className="col-lg-2 col-4">100.0%</div>
+                <div className="col-lg-5 col-4">10.000.000 MetaCeek</div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-12 chart">
+              <img width="100%" src={chart} alt="" />
+            </div>
+          </div>
+          <h3 className="text-center" style={{ color: "rgb(56, 255, 255)" }}>
+            BUY AND SELL 10% SLIPPAGE
+          </h3>
+        </div>
+      </section>
+      {/* Modal */}
+      <div
+        className="modal fade"
+        id="exampleModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                GITBOOK
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body">
+              <p>
+                Metaceek is the first play to earn crypto game built on the
+                Binance Smart Chain which rewards players directly in Bnb or
+                ceek Players will use Metaceek to recruit heroes, Level up,
+                upgrade buildings, purchase various items and complete missions
+                in order to receive rewards in BNB or CEKK.
+              </p>
+              <p>
+                Besides, just holding metaceek you will get paid ceek
+                automatically.
+              </p>
+              <p>Metaceek is launched on Pancakeswap.</p>
+            </div>
+            {/* <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" className="btn btn-primary">
+                Save changes
+              </button>
+            </div> */}
+          </div>
+        </div>
       </div>
     </div>
   );
