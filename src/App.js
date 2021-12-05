@@ -11,6 +11,7 @@ import war1 from "./images/warrior1.svg";
 import war2 from "./images/warrior2.svg";
 import chart from "./images/Tokenomic.png";
 import war3 from "./images/warrior3.svg";
+import iconew from "./images/4cC4Fgs.png";
 import war4 from "./images/warrior4.svg";
 import fighting from "./images/fighticon.svg";
 import { useEffect, useState } from "react";
@@ -255,7 +256,7 @@ function App() {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog">
+        <div className=" modal-dialog modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
@@ -281,6 +282,10 @@ function App() {
                 automatically.
               </p>
               <p>Metaceek is launched on Pancakeswap.</p>
+              <p>
+                After appearing on the pancakeswap 1 week, you can choose a hero
+                for yourself and get the special bonus is ceek or bnb.
+              </p>
               <h4 className="text-center">Buy & Sale Slippage: 12%</h4>
               <div
                 className="text-center"
@@ -295,6 +300,100 @@ function App() {
                     0xe0f94ac5462997d2bc57287ac3a3ae4c31345d66
                   </span>
                 </h5>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div>
+                <img width="30%" className="mb-3" src={iconew} alt="" />
+                <p>
+                  Presale link:
+                  <a
+                    target="_blank"
+                    href="https://www.pinksale.finance/#/launchpad/0x16CceF449838089D6c3670c533Cfa5c9333ec332?chain=BSC"
+                  >
+                    Here
+                  </a>
+                </p>
+                <p>
+                  ⭐️PreSale information: <br /> PreSale Date: 15:00UTC 6th,
+                  December <br />
+                </p>
+                <p>
+                  {" "}
+                  Softcap/Hardcap: 150/300 bnb Min/max buy: 0.1/1.5 Bnb Launch{" "}
+                </p>
+                <p>
+                  {" "}
+                  Date: 15:00 UTC 7th December <br />
+                </p>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div>
+                <h2 className="title mb-5 title-custom">TOKENOMICS</h2>
+                <div className="row">
+                  <div className="col-12 chart mt-5 mb-5">
+                    <img width="100%" src={chart} alt="" />
+                  </div>
+                  <div
+                    className="col-12 d-flex align-items-center justify-content-center table-custom"
+                    style={{ flexDirection: "column" }}
+                  >
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">List on Pancake Swap</div>
+                      <div className="col-lg-2 col-4">30.0%</div>
+                      <div className="col-lg-5 col-4">
+                        3.000.000.000 MetaCeek
+                      </div>
+                    </div>
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">Pre-sale WhiteList</div>
+                      <div className="col-lg-2 col-4">25.0%</div>
+                      <div className="col-lg-5 col-4">
+                        2.500.000.000 MetaCeek
+                      </div>
+                    </div>
+                    {/* <div className="row w-100">
+                <div className="col-lg-5 col-4">Pre-sale</div>
+                <div className="col-lg-2 col-4">18.0%</div>
+                <div className="col-lg-5 col-4">1.500.000.000 MetaCeek</div>
+              </div> */}
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">Aridrop</div>
+                      <div className="col-lg-2 col-4">2.0%</div>
+                      <div className="col-lg-5 col-4">200.000.000 MetaCeek</div>
+                    </div>
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">Burn</div>
+                      <div className="col-lg-2 col-4">13.0%</div>
+                      <div className="col-lg-5 col-4">
+                        1.300.000.000 MetaCeek
+                      </div>
+                    </div>
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">Cex listings</div>
+                      <div className="col-lg-2 col-4">20.0%</div>
+                      <div className="col-lg-5 col-4">
+                        2.000.000.000 MetaCeek
+                      </div>
+                    </div>
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">Development Team</div>
+                      <div className="col-lg-2 col-4">5.0%</div>
+                      <div className="col-lg-5 col-4">500.000.000 MetaCeek</div>
+                    </div>
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">Marketing</div>
+                      <div className="col-lg-2 col-4">5.0%</div>
+                      <div className="col-lg-5 col-4">500.000.000 MetaCeek</div>
+                    </div>
+                    <div className="row w-100">
+                      <div className="col-lg-5 col-4">Total </div>
+                      <div className="col-lg-2 col-4">100.0%</div>
+                      <div className="col-lg-5 col-4">
+                        10.000.000.000 MetaCeek
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             {/* <div className="modal-footer">
